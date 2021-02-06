@@ -10,7 +10,7 @@ artyom.initialize({
 //Load all careers in careers table
 $.ajax({
   type: "post",
-  url: "https://nustem.uk/r/clv/jobs/getcareers.php",
+  url: "../jobs/getcareers.php",
   success: function(data) {
     console.log(data);
     var cardtext = data.split("%").reverse();
@@ -243,13 +243,13 @@ $("#finish").click(function() {
     $.ajax({
       data: data,
       type: "post",
-      url: "https://nustem.uk/r/clv/jobs/request.php",
+      url: "../jobs/request.php",
       success: function(data) {
         // Displays alert if there is an error
         if (data != "00000") {
           window.alert("Error Code : " + data);
         } else {
-          window.location.replace("https://nustem.uk/r/clv/EndScreen");
+          window.location.replace("/EndScreen");
         }
       }
     });

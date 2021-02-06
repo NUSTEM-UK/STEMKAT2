@@ -3,7 +3,7 @@ $(".S").click(function() {
   console.log("skat");
   $.ajax({
 	type: "post",
-	url: "https://nustem.uk/r/clv/report/skat.php",
+	url: "report/skat.php",
 	success: function(data){
 		let csvContent = "data:text/csv;charset=utf-8,";
 		csvContent += data;
