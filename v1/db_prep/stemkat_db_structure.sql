@@ -18,10 +18,11 @@ CREATE TABLE `careers`(
 	PRIMARY KEY (`uniqueID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-
 DROP TABLE IF EXISTS `careers_list`;
 
-CREATE TABLE `careers_list`(id VARCHAR(2) PRIMARY KEY, careers VARCHAR(20) NOT NULL);
+CREATE TABLE `careers_list`(
+	id VARCHAR(2) PRIMARY KEY,
+	careers VARCHAR(20) NOT NULL);
 
 
 DROP TRIGGER IF EXISTS add_datetime_careers;
