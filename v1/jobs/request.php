@@ -10,7 +10,7 @@ if(isset($_REQUEST))
 	$unknown = ($_POST['unknowncards'] ?: NULL);
 	$liked = ($_POST['likedcards'] ?: NULL);
 	$disliked = ($_POST['dislikedcards'] ?: NULL);
-	$uncertain = ($_POST['uncertain'] ?: NULL);	
+	$uncertain = ($_POST['uncertain'] ?: NULL);
 	// Additions for CITE
 	$gender = ($_POST['gender'] ?: NULL);
 	$yeargroup = ($_POST['yeargroup'] ?: NULL);
@@ -24,7 +24,7 @@ if(isset($_REQUEST))
 
 	$stmt = $conn -> prepare("INSERT INTO careers(id, unknown, liked, disliked, unsure, gender, yeargroup, likesci, goodsci) VALUES(:id, :unknown, :liked, :disliked, :unsure, :gender, :yeargroup, :likesci, :goodsci);");
 	$stmt -> execute([':id' => $id, ':liked' => $liked,  ':unknown' => $unknown, ':disliked' => $disliked, ':unsure' => $uncertain, ':gender' => $gender, ':yeargroup' => $yeargroup, ':likesci' => $likesci, ':goodsci' => $goodsci]);
-	
+
 	// $stmt -> debugDumpParams(); // Spew raw SQL into the popup dialog so we can see what's going on (comment out for production)
 	$errorCode = $stmt->errorInfo();
 
