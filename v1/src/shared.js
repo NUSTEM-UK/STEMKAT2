@@ -1,4 +1,5 @@
 // Pads a number with 0s to reach an expected amount
+// TODO: Is this needed, or is there a built-in JS function?
 function pad(n, width, z) {
   z = z || "0";
   n = n + "";
@@ -11,6 +12,7 @@ $(".close-overlay").click(function() {
 });
 
 // Check if passed string is alphabetically valid
+// TODO: not part of a standard library?
 function isLetter(letter) {
     var letterMatch = /^[a-zA-Z]+$/;
     if (letter.match(letterMatch)) {

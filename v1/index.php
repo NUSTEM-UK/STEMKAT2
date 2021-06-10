@@ -8,12 +8,13 @@
   <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
   <link rel="icon" type="image/png" href="img/NUSTEMSQR.jpg" />
+  <!-- TODO: Review Bootstrap docs https://getbootstrap.com -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- <link href="static/css/bootstrap-slate.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="style.css" />
   <?php
-  /** 
-   * Start session to use as data storage to keep personal data 
+  /**
+   * Start session to use as data storage to keep personal data
    */
   session_start();
   ?>
@@ -166,6 +167,7 @@
             </div>
             <div class="col-6">
               <select name="school" class="form-control" required>
+                <!-- TODO: Configuration file, maybe? -->
                 <option selected disabled>...in school...</option>
                 <option value='0000'>Test School</option>
                 <!-- <option value='0021'>...in Chopwell</option>
@@ -177,7 +179,7 @@
                 <option value='0027'>...in Burradon Community Primary.</option>
                 <option value='0028'>...in Chillingham Road Primary.</option>
                 <option value='0029'>...in Kenton Bar Primary.</option>
-                <option value='0030'>...in New York Primary</option> 
+                <option value='0030'>...in New York Primary</option>
                 <option value='0031'>...in St. Mary's RC Primary.</option>
                 <option value='0032'>...in Cleadon C of E Primary.</option>
                 <option value='0033'>...in Hadrian Park Primary.</option>
@@ -286,6 +288,7 @@
     </div>
   </div> <!-- container -->
 
+  <!-- TODO: Are these actually used here? -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

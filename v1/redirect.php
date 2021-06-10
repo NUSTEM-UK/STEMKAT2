@@ -1,4 +1,5 @@
 <?php
+	// TODO: Read up on PHP sessions
 	session_start();
 
 	// Grab data for session from form

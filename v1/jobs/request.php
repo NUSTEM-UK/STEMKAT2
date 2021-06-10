@@ -22,6 +22,8 @@ if(isset($_REQUEST))
 
 	$conn = connect();
 
+	// TODO: read up on prepared statements
+	// TODO: This is where the database insert happens!
 	$stmt = $conn -> prepare("INSERT INTO careers(id, unknown, liked, disliked, unsure, gender, yeargroup, likesci, goodsci) VALUES(:id, :unknown, :liked, :disliked, :unsure, :gender, :yeargroup, :likesci, :goodsci);");
 	$stmt -> execute([':id' => $id, ':liked' => $liked,  ':unknown' => $unknown, ':disliked' => $disliked, ':unsure' => $uncertain, ':gender' => $gender, ':yeargroup' => $yeargroup, ':likesci' => $likesci, ':goodsci' => $goodsci]);
 

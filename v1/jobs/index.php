@@ -118,6 +118,7 @@
   </div>
 
   <!-- JS Scripts -->
+  <!-- TODO: Interact library: https://interactjs.io -->
   <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="src/artyom.window.min.js"></script>

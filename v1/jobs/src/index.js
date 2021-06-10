@@ -22,6 +22,9 @@ $.ajax({
       if (card[0]) {
         let div = document.createElement("div");
         div.classList.add("drag-drop1");
+        // TODO: This is where the job ID & text are inserted
+        //       into the app, from the database.
+        //       ...so you may wish to make changes here. Ahem.
         div.id = card[0];
         div.innerHTML = card[1];
 
@@ -129,13 +132,14 @@ function allowSpeech() {
   }
 }
 
+// TODO: JQuery!
 //JQuery function call on click of next button to create second tab
 $("#next").click(function() {
   //Get all sorted elements
   let knownEl = document.querySelectorAll("#dropboxes1 .known-dropzone");
   let unknownEl = document.querySelectorAll("#dropboxes1 .unknown-dropzone");
 
-  //Ensure there is the full ammount of elements
+  //Ensure there is the full amount of elements
   if (knownEl.length + unknownEl.length == numCards) {
     let known = [];
     knownEl.forEach(function(element) {
@@ -181,7 +185,7 @@ $("#finish").click(function() {
   let yeargroupId = $("#hidden-data .yeargroup").val();
   let likesciId = $("#hidden-data .likesci").val();
   let goodsciId = $("#hidden-data .goodsci").val();
-  
+
 
   fnameId = encodeLetter(fnameId);
   snameId = encodeLetter(snameId);
@@ -249,7 +253,9 @@ $("#finish").click(function() {
         if (data != "00000") {
           window.alert("Error Code : " + data);
         } else {
+          // TODO: Path issue: EndScreen probably isn't at the server root
           window.location.replace("/EndScreen");
+          // window.location.replace("localhost/EndScreen");
         }
       }
     });
