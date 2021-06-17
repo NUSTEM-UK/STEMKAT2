@@ -4,4 +4,4 @@ This is a simplified/reduced version of the [PrimaryResearchTool repo](https://g
 
 If this repository is relevant to you, you'll have received an email about it from Jonathan.
 
-Peter, Gabriella and Craigs Version
+Peter, Gabriella and Craigs Version.
