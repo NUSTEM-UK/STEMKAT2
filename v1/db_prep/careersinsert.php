@@ -59,11 +59,28 @@
 					// }
 
 	include('../src/connect.php');
-
 	$conn = connect();
+	
+$txt_file    = file_get_contents('./jobs.txt');
+$rows        = explode("\n", $txt_file);
+array_shift($rows);
+
+foreach($rows as $row => $data)
+{
+    //get row data
+    $row_data = explode(',', $data);
+
+    $info[$row]['id'] = $row_data[0];
+    $info[$row]['careers'] = $row_data[1];
+}
+/*     //display data
+    echo 'Row ' . $row . ' ID: ' . $info[$row]['id'] . '<br />';
+    echo 'Row ' . $row . ' CAREERS: ' . $info[$row]['careers'] . '<br />'; */
 	
 	$stmt = $conn -> prepare("INSERT INTO careers_list(id, careers) VALUES(:id, :careers);");
 	
 	foreach($careers as $key => $value) {
 		$stmt -> execute([':id' => $key, ':careers' => $value]);
 	}
+
+
