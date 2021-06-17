@@ -1,0 +1,15 @@
+
+
+1. Jobs config file
+2. School config file
+3. Scoping / understanding changes needed to database model/access code
+
+...
+
+n. Relocate anonymisation
+
+
+
+$_POST
+$_REQUEST
+$_SESSION
