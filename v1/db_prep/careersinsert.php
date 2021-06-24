@@ -1,5 +1,5 @@
 <?php
-// TODO: Amend this jobs list @DONE
+// TODO: Application now uses getcareers.php
 	$careers = array('ac' => 'actor/actress',
 				  	 'ar' => 'architect',
 					//  'as' => 'astronaut',

@@ -199,6 +199,7 @@ $("#finish").click(function() {
   // TODO: Amend this per Annie's request. @DONE
   // Need to encode name letters plain weirdly
   let id = fnameId + snameId + bdayId + bmonthId + schoolId;
+  
 
   //If number of cards is correct insert data and link to next page
   if (

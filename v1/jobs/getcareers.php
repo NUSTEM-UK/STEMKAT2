@@ -1,14 +1,15 @@
 <?php
-	// Connect to DB
+//Assigns file to variable
+$txt_file    = file_get_contents('./jobs.txt');
+//Separating by line
+$rows        = explode("\n", $txt_file);
 
-	include('../src/connect.php');
+foreach($rows as $row => $data)
+{
+	//Further separating by comma
+	$row_data = explode(',', $data);
 
-	$conn = connect();
-
-	// Returns list of careers top dynamically create cards
-	$sql = 'SELECT * FROM careers_list;';
-    foreach($conn -> query($sql) as $row) {
-		echo $row['id'].',';
-		echo $row['careers'].'%';
-    }
+	echo $row_data[0].',';
+	echo $row_data[1].'%';
+}
 ?>
