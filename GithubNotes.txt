@@ -15,3 +15,6 @@ git push finally pushes your work upto github
 
 (To make life a little easier you can set upstream so all you have todo is git pull or git push)
     git branch --set-upstream-to=origin/feature1
+
+git pull origin feature1
+
