@@ -1,0 +1,17 @@
+Git status checks your working tree to see if its dirty or clean
+dirty = unstaged modifications / clean = staged and ready for commit
+    git status
+
+Git Stage and Add are both similar as they both prepare your changes for commit
+    git stage .
+    git add .
+
+Git commit is done once your work is ready to be pushed
+using the flag -m makes it so that you can add a commit message keep it useful i.e what you have done since last commit
+    git commit -m "Commit message here"
+
+git push finally pushes your work upto github    
+    git push origin feature1
+
+(To make life a little easier you can set upstream so all you have todo is git pull or git push)
+    git branch --set-upstream-to=origin/feature1
