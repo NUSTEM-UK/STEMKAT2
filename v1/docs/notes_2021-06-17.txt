@@ -1,6 +1,6 @@
 
 
-1. Jobs config file
+1. Jobs config file @done 2021-06-24
 2. School config file
 3. Scoping / understanding changes needed to database model/access code
 
