@@ -28,4 +28,3 @@ te, teacher
 tc, technician
 ve, vet
 wa, waiter/waitress
-cm, Craggle McNicol
