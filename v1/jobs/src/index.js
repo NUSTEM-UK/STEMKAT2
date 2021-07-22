@@ -22,11 +22,9 @@ $.ajax({
       if (card[0]) {
         let div = document.createElement("div");
         div.classList.add("drag-drop1");
-        // TODO: This is where the job ID & text are inserted
-        //       into the app, from the database.
-        //       ...so you may wish to make changes here. Ahem.
         div.id = card[0];
-        div.innerHTML = card[1];
+        div.innerHTML = card[0];
+        //above uses the saved job titles and contructs drag and drop cards with the job title from the db
 
         document.querySelector("#start-dropzone").appendChild(div);
       }
@@ -255,7 +253,8 @@ $("#finish").click(function() {
           window.alert("Error Code : " + data);
         } else {
           // TODO: Path issue: EndScreen probably isn't at the server root
-          window.location.replace("/EndScreen");
+          window.location.replace("/STEMKAT2/v1/EndScreen");
+          // window.location.replace("localhost/STEMKAT2/v1/EndScreen");
           // window.location.replace("localhost/EndScreen");
         }
       }
