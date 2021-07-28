@@ -6,10 +6,14 @@ DROP TABLE IF EXISTS `careers`;
 CREATE TABLE `careers`(
 	`uniqueID` INT AUTO_INCREMENT,
 	`id` CHAR(12),
-	`unknown` SET('ac','ar','at','au','ba','bu','cw','ch','cp','dd','do','en','fw','fd','hd','la','ma','me','nu','ow','pi','po','sc','sa','sw','sp','te','tc','ve','wa'),
+	'unknown' TEXT,
+	'liked' TEXT,
+	'disliked' TEXT,
+	'unsure' TEXT,
+	/* `unknown` SET('ac','ar','at','au','ba','bu','cw','ch','cp','dd','do','en','fw','fd','hd','la','ma','me','nu','ow','pi','po','sc','sa','sw','sp','te','tc','ve','wa'),
 	`liked` SET('ac','ar','at','au','ba','bu','cw','ch','cp','dd','do','en','fw','fd','hd','la','ma','me','nu','ow','pi','po','sc','sa','sw','sp','te','tc','ve','wa'),
 	`disliked` SET('ac','ar','at','au','ba','bu','cw','ch','cp','dd','do','en','fw','fd','hd','la','ma','me','nu','ow','pi','po','sc','sa','sw','sp','te','tc','ve','wa'),
-	`unsure` SET('ac','ar','at','au','ba','bu','cw','ch','cp','dd','do','en','fw','fd','hd','la','ma','me','nu','ow','pi','po','sc','sa','sw','sp','te','tc','ve','wa'),
+	`unsure` SET('ac','ar','at','au','ba','bu','cw','ch','cp','dd','do','en','fw','fd','hd','la','ma','me','nu','ow','pi','po','sc','sa','sw','sp','te','tc','ve','wa'), */
 	`timestamp` DATETIME NOT NULL,
 	`gender` CHAR(1),
 	`yeargroup` TINYINT(3) UNSIGNED NOT NULL,

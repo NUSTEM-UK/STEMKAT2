@@ -25,7 +25,7 @@ $.ajax({
         // TODO: This is where the job ID & text are inserted
         //       into the app, from the database.
         //       ...so you may wish to make changes here. Ahem.
-        div.id = card[0];
+        div.id = card[1];
         div.innerHTML = card[1];
 
         document.querySelector("#start-dropzone").appendChild(div);
